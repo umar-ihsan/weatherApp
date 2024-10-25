@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display:flex;
+    height: 100vh;
+    background-color:rgb(229, 229, 243);
+    
+}
+
+div{
+    border: 1px solid black;
+    margin: 3px 3px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 15px;
+    padding: 15px 15px;
+    background-color: rgb(83, 119, 217);
+    flex: 1;
+    justify-content: center;
+    gap: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.icon{
+    position: relative;
+    top: -280px;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    font-size:5ch;
+}
+
+.dashboard-btn{
+    position: relative;
+    top: -230px;
+    padding: 10px;
+    text-align: center;
+    border: 3px solid white;
+    color: white;
+    border-radius: 10px;
+}
+
+.table-btn{
+    position: relative;
+    top: -200px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 15px 15px 0px;
+    background-color: lightcoral;
+    flex: 4;    
+    border: 3px solid black;
+    border-radius: 10px;
+    
+}
+
+.navbar{
+
+    display: flex;
+    border: none;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0px 10px ;
+    
+}
+
+.search{
+    width:50%;
+    margin: 0px 5px 0px auto; 
+    padding: 2px;
+    border: 3px solid white;
+    border-radius: 8px;
+}
+
+.search input {
+    width: 87%;
+    background-color: transparent; 
+    border: none;
+    outline: none; 
+    
+    padding: 0px 0px 0px 40px;
+}
+.search input::placeholder{
+    color: white;
+    font-weight: bold; 
+}
+.button{
+    margin-right: auto;
+    border: 3px solid white;
+    border-radius: 8px;
+    width: auto;
+    
+    padding: 2px;
+}
+#get-weather{
+    background-color:transparent;
+    border: none;
+    outline: none; 
+    color: white;
+    font-size: small;
+    font-weight: bold;
+}
+.profile-btn{
+    width: 2%;
+    margin-right: 15px;
+    border-radius: 100%;
+    text-align: center;
+    
+}
+
+.main-content{
+    margin: 10px 50px 10px 50px;
+    height: 60vh;
+    border: none;
+}
+
+#pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+  
+}
+
+.page-button {
+    
+    margin: 2px 5px;
+    padding: 5px 10px;
+    border: 1px;
+    border-radius: 5px;
+     
+}
+
+.page-button.active {
+    background-color: #75b0ec; /* Color for the active button */
+}
+
+.sort{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+}
+
+.charts-container{
+    height: 40vh;
+    display: flex;
+   
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+}
+
+.bar-chart{
+    width: 20%;
+    height: 80%;
+    
+    margin-left: 5vw;
+    border: 3px solid black;
+    border-radius: 8px;
+    background-color: white;
+    padding: 10px;
+    
+}
+
+#barChart{
+    height: 100%;
+    width: 100%;
+}
+
+.pie-chart{
+    width: 20%;
+    height: 80%;
+    border: 3px solid black;
+    border-radius: 8px;
+    background-color: white;
+    padding: 10px;
+    
+}
+
+#pieChart{
+    height: 100%;
+    width: 100%;
+}
+
+.line-chart{
+    width: 20%;
+    height: 80%;
+    margin-right: 5vw;
+    border: 3px solid black;
+    border-radius: 8px;
+    background-color: white;
+    padding: 10px;
+    
+}
+
+#lineChart{
+    height: 100%;
+    width: 100%;
+}
+
+.weather-card {
+    background-color: rgb(83, 119, 217); 
+    color: white; 
+    padding: 10px; 
+    border: 3px solid white;
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    text-align: center; 
+    margin: 5px auto; 
+    width: 80%; 
+}
+
+#city-name {
+    margin: 0; 
+    font-size: 24px; 
+}
+
+#current-temp {
+    margin: 10px 0 0; 
+    font-size: 18px; 
+}
+
+
+
+.table {
+    margin: 20px auto; 
+    width: 80%; 
+    padding: 0px 10px;
+    border-collapse: collapse; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    border: 3px solid white;
+    border-radius: 8px;
+}
+
+#forecast-table {
+    width: 100%; 
+    border: 1px solid #ccc; 
+}
+
+th, td {
+    padding: 12px; 
+    text-align: center; 
+    border: 1px solid #ccc; 
+}
+
+th {
+    background-color: rgb(83, 119, 217); 
+    color: white; 
+    font-weight: bold; 
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(240, 240, 240, 0.5); 
+}
+
+tbody tr:hover {
+    background-color: rgba(83, 119, 217, 0.2); 
+}
